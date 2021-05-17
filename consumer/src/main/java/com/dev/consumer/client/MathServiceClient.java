@@ -1,4 +1,4 @@
-package com.dev.consumer.helper;
+package com.dev.consumer.client;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Service;
@@ -7,8 +7,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Service
-@FeignClient(name="math", url ="${math-server}")
-public interface MathHelper {
+
+@FeignClient(value = "math-service/math")
+public interface MathServiceClient {
 
     @RequestMapping(method = RequestMethod.GET, value =  "/add/{a}/{b}")
     public Integer add(@PathVariable Integer a, @PathVariable Integer b);

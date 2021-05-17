@@ -1,6 +1,6 @@
 package com.dev.consumer.controller;
 
-import com.dev.consumer.helper.MathHelper;
+import com.dev.consumer.client.MathServiceClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -12,7 +12,7 @@ import java.util.List;
 public class ConsumerController {
 
     @Autowired
-    MathHelper mathHelper;
+    MathServiceClient mathHelper;
 
     @GetMapping("/perform-calculation")
     public List<String> performCall(){
