@@ -1,0 +1,22 @@
+server:
+  port: 9092
+
+spring:
+  application:
+    name: consumer
+#  cloud:
+#    config:
+#      enabled: false
+
+#eureka:
+#  client:
+#    service-url:
+#      default-zone: http://localhost:8761/eureka
+
+logging:
+  level:
+    web: INFO
+
+math-server: localhost:9091/math
+
+
