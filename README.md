@@ -1,10 +1,10 @@
 # Feign Client Demo
 
-Simple demo implementation of Feign Clinet
+Simple demo implementation of Feign Client with Fallback.
 
 ## Services
 
-There are two services as follows:
+There are three services as follows:
 
 ```bash
 1. math-service - Which has add, multiply and square as endpoint
@@ -14,7 +14,7 @@ There are two services as follows:
 
 ## How to run
 
-Import these services in your ide and run the application as java application
+Import these services in your IDE and run the application as java application
 
 ```python
 Service      | Port

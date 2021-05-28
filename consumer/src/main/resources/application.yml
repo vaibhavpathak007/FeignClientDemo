@@ -21,4 +21,8 @@ logging:
     web: INFO
 
 
-
+resilience4j.retry:
+  instances:
+    default:
+      maxAttempts: 2 # How many times API retry should happen.
+      waitDuration: 1s # How long should wait to make retry calls.
